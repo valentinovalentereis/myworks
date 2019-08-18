@@ -1,0 +1,93 @@
+mat-tab-group {
+    text-align: left;
+    align-content: left;
+    width: auto;    
+}
+
+mat-tab-group p {
+    padding-top: 10px;
+    text-align: left;
+}
+
+/*SNACK BAR */
+.party {
+    animation: party 5000ms infinite;
+  }
+  
+  @keyframes party {
+    0% { background: #00f; }
+    10% { background: #8e44ad; }
+    20% { background: #1abc9c; }
+    30% { background: #d35400; }
+    40% { background: #00f; }
+    50% { background: #34495e; }
+    60% { background: #00f; }
+    70% { background: #2980b9; }
+    80% { background: #f1c40f; }
+    90% { background: #2980b9; }
+    100% { background: #0ff; }
+  }
+  
+  .test {
+    background: #ee0914;
+    color: blue;
+  }
+  :host .actionButtonLabel {
+    color: blue;
+  }
+/* FIM SNACK BAR */
+
+/*MUDA O ESTILO DO SCROLLBAR*/
+.scrollbar {
+  background-color: #F5F5F5;
+  float: left;
+  height: auto;
+  margin-bottom: 0px;
+  margin-left: -1px;
+  margin-top: 0px;
+  width: -1px;
+  overflow-y: scroll;
+}
+#style-1::-webkit-scrollbar {
+  width: 1px;
+  background-color: #F5F5F5;
+} 
+#style-1::-webkit-scrollbar-thumb {
+  background-color: #000000;
+}
+#style-1::-webkit-scrollbar-track {
+  background-color: #F5F5F5;
+}
+.force-overflow {
+  min-height: auto;
+}
+/*FIM MUDA O ESTILO DO SCROLLBAR*/
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  opacity: 0;
+  transition: all .2s ease-in-out;
+}
+
+.show-scroll {
+  opacity: 1;
+  transition: all .2s ease-in-out;
+}
+
+/*CONFIGURAÇÃO CARD*/
+.example-card {
+  max-width: 510px;
+}
+.example-header-image {
+  /*background-image: url('~/assets/img/shiba1.jpg');*/
+  background-size: cover;
+}
+
+/*CENTRALIZA TUDO*/
+.parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

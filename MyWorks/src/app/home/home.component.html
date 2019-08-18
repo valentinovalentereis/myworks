@@ -1,0 +1,47 @@
+<div class="scrollbar" id="style-2">
+  <div class="force-overflow"></div>
+</div> 
+<section fxLayout="column wrap">
+<div fxFlexAlign="center" style="margin-top: 16px;">
+</div>
+
+<mat-icon class="mat-icon-rtl-mirror"></mat-icon>
+<!--<mat-tab-group (selectedTabChange)="executeSelectedChange($event)">-->
+
+<div class='parent'>
+<mat-tab-group (selectedTabChange)="open($event)">
+<!--<mat-tab-group>-->
+  <mat-tab label="Tab 1">
+      <mat-card class="example-card">
+          <mat-card-content>
+            <p></p>
+  
+          </mat-card-content>
+          <mat-card-actions>
+            <button id="idCurtir" mat-button><mat-icon>thumb_up</mat-icon> Curtir</button>
+            <button id="idCompartilhar" mat-button><mat-icon>share</mat-icon> Compartilhar</button>
+          </mat-card-actions>
+        </mat-card>
+  </mat-tab>
+  
+  <mat-tab label="Tab 2">
+      
+      <mat-card class="example-card">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>Angular</mat-card-title>
+            <mat-card-subtitle>Angular</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="./assets/icons/icon-72x72" alt="Angular">
+          <mat-card-content>
+          <p></p>
+        
+          </mat-card-content>
+          <mat-card-actions>
+            <button id="curtir0" mat-button><mat-icon>thumb_up</mat-icon> Curtir</button>
+            <button id="compartilha0" mat-button><mat-icon>share</mat-icon> Compartilhar</button>
+          </mat-card-actions>
+        </mat-card>
+  </mat-tab>
+</mat-tab-group></div>
+</section>

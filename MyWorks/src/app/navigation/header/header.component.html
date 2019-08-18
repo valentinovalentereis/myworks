@@ -1,0 +1,43 @@
+<mat-toolbar color="warn" class="crm-navigation-bar">
+  <!--O MENU FICA OCULTADO SO MOSTRA QUANDO COMPRIME A TELA <div fxHide.gt-xs>-->
+  <div>
+      <button id="navega" role="button" attribute="aria-label" aria-hidden="true" mat-icon-button (click)="onToggleSidenav()">
+          <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  <div>
+      <a routerLink="/home" color=#8cf505>Titulo</a>
+  </div>
+  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+
+      <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+          <li>
+              <a routerLink="/owner">Aplicação</a>
+          </li>
+          <li>
+      </ul>
+  </div>
+  <!--SE COLOCAR  fxHide.xs esconde quando reduz a tela-->
+  <div fxFlex fxLayout fxLayoutAlign="end">
+    <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+        <li>
+            <!--<button mat-icon-button (click)="clearCount()">-->
+            <button id="notificacao" role="button" attribute="aria-label" mat-icon-button>
+               <mat-icon matBadge="15" matBadgeColor="accent" class="icon">notifications</mat-icon>
+            </button>
+        </li>
+        <li>
+            <button mat-icon-button [matMenuTriggerFor]="auth">
+                <mat-icon>person_outline</mat-icon>
+            </button>
+            <mat-menu #auth="matMenu">
+                <!--<button mat-menu-item (click)="logout()">-->
+                <button id="menuitem" mat-menu-item>
+                    <mat-icon>exit_to_app</mat-icon>
+                        <span>Sair</span>
+                </button>
+            </mat-menu>
+        </li>                  
+    </ul>
+  </div>
+</mat-toolbar>

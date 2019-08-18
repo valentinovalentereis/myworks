@@ -1,0 +1,7 @@
+{
+"styles" : ["styles.css"],
+"scripts" : [
+    "src/assets/js/app.js",
+    "../node_modules/jquery/dist/jquery.js"    
+    ]
+}

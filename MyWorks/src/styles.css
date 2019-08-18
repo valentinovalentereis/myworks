@@ -1,0 +1,16 @@
+/* You can add global styles to this file, and also import other style files */
+/*@import "~@angular/material/prebuilt-themes/indigo-pink.css";*/
+/* Add application styles & imports to this file! */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~animate.css/animate.min.css";
+@import "~morris.js/morris.css";
+@import "assets/css/main.css";
+
+/* for sidenav to take whole page */
+html, body { 
+    margin: 0;
+    height: 100%;
+}

@@ -1,0 +1,72 @@
+<mat-nav-list class="background-primary-color">
+  <img matListAvatar src="../../../assets/icons/icon-96x96.png" style="height:50%;width: 50%;margin-left: 45px;border-radius:10px;-webkit-border-radius: 10px" alt="On-Work">
+  <mat-divider></mat-divider>
+  <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+    <mat-icon>home</mat-icon> <span class="nav-caption">aa</span>
+  </a>
+
+  <mat-list-item [matMenuTriggerFor]="menu">
+      <mat-icon>grid_on</mat-icon> <span class="nav-caption">bb</span>
+  </mat-list-item>
+  <mat-menu #menu="matMenu">
+      <button mat-menu-item (click)="onSidenavClose()">
+        <mat-icon>dialpad</mat-icon>
+        <span>rrrrr</span>
+      </button>
+      <button mat-menu-item (click)="onSidenavClose()" disabled>
+        <mat-icon>voicemail</mat-icon>
+        <span>ttttt</span>
+      </button>
+      <button mat-menu-item (click)="onSidenavClose()">
+        <mat-icon>notifications_off</mat-icon>
+        <span>pppppp</span>
+      </button>
+  </mat-menu>
+  
+    <!-- Menu  Tabelas  -->
+    <mat-divider></mat-divider>
+    <a mat-list-item (click)="toggleMenuTab()">
+      <mat-icon mat-list-icon>business</mat-icon>cc 
+      <mat-icon *ngIf="!showMenuTab">chevron_right</mat-icon>
+      <mat-icon *ngIf="showMenuTab">expand_more</mat-icon>
+    </a>
+    <mat-nav-list class="sidenav-submenu" *ngIf="showMenuTab">
+
+        <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+          <mat-icon>group</mat-icon> <span class="nav-caption">cccc</span>
+        </a>      
+        <a mat-list-item routerLink="/usuarios" (click)="onSidenavClose()">
+          <mat-icon>person</mat-icon> <span class="nav-caption">dddd</span>
+        </a>      
+        <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+          <mat-icon>move_to_inbox</mat-icon> <span class="nav-caption">eeee</span>
+        </a>      
+
+        <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+          <mat-icon>how_to_vote</mat-icon> <span class="nav-caption">ffff</span>
+        </a>      
+
+        <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+          <mat-icon>record_voice_over</mat-icon> <span class="nav-caption">ggggg</span>
+        </a>      
+
+        <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+          <mat-icon>spellcheck</mat-icon> <span class="nav-caption">hhhhh</span>
+        </a>      
+    </mat-nav-list>
+    <mat-divider></mat-divider>
+    <a mat-list-item (click)="toggleMenuAte()">
+        <mat-icon mat-list-icon>assignment_turn_in</mat-icon>wwwwww 
+        <mat-icon *ngIf="!showMenuAte">chevron_right</mat-icon>
+        <mat-icon *ngIf="showMenuAte">expand_more</mat-icon>
+    </a>
+    <mat-nav-list class="sidenav-submenu" *ngIf="showMenuAte">
+      <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+        <mat-icon matBadge="15" matBadgeColor="primary">inbox</mat-icon><span class="nav-caption">yyyyyyyy</span>
+      </a>
+      <a mat-list-item routerLink="#" (click)="onSidenavClose()">
+        <mat-icon matBadge="15" matBadgeColor="primary">how_to_reg</mat-icon><span class="nav-caption">zzzzzzzzzzz</span>
+      </a>
+    </mat-nav-list>    
+</mat-nav-list>
+
