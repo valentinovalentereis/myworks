@@ -26,7 +26,7 @@
     "@angular/router": "^6.1.0",
     "@angular/service-worker": "^6.1.0",
     "@material/card": "^2.0.0",
-    "angular": "^1.4.14",
+    "angular": "^1.8.0",
     "angular-animate": "^1.4.14",
     "angular-aria": "^1.4.14",
     "angular-messages": "^1.4.14",
